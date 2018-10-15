@@ -485,7 +485,8 @@
 		_disableDelayedDrag: function () {
 			var ownerDocument = this.el.ownerDocument;
 
-			clearTimeout(this._dragStartTimer);
+			// 注释下面这行代码是因为在【b端 appvivo y83手机】无法拖动
+			// clearTimeout(this._dragStartTimer);
 			_off(ownerDocument, 'mouseup', this._disableDelayedDrag);
 			_off(ownerDocument, 'touchend', this._disableDelayedDrag);
 			_off(ownerDocument, 'touchcancel', this._disableDelayedDrag);
