@@ -1,6 +1,7 @@
 {
   "name": "@msfe/sortablejs",
-  "version": "1.7.0",
+  "exportName": "Sortable",
+  "version": "1.7.1",
   "devDependencies": {
     "grunt": "*",
     "grunt-contrib-jshint": "*",
@@ -16,6 +17,10 @@
     "test": "./node_modules/grunt/bin/grunt",
     "prepublish": "./node_modules/grunt/bin/grunt",
     "http-server": "http-server -s ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rubaxa/Sortable.git"
   },
   "files": [
     "Sortable.js",
